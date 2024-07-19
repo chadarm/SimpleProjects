@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c99b51c1-bcf7-460c-8906-27bbf0efe16a}</ProjectGuid>
-    <RootNamespace>Calculator</RootNamespace>
+    <ProjectGuid>{4cb29bcc-54fb-4822-920d-d8136aa79ebc}</ProjectGuid>
+    <RootNamespace>NumberGuessingGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
       <AdditionalIncludeDirectories>E:\ChappyStuff\CppProjects\SimpleProjects\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -128,10 +129,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="NumberGuessingGame.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Calculator.h" />
+    <ClInclude Include="NumberGuessingGame.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
