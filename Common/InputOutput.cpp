@@ -72,6 +72,28 @@ char GetCharInput(std::string prompt, std::string acceptableChars)
     }
 }
 
+std::string GetStringInput(std::string prompt)
+{
+    std::string input = "";
+    while (true)
+    {
+        std::cout << prompt;
+        getline(std::cin, input);
+
+
+        if (!std::cin)
+        {
+            std::cin.clear();
+            IgnoreRestOfInput();
+            continue;
+        }
+
+
+        IgnoreRestOfInput();
+        return input;
+    }
+}
+
 void IgnoreRestOfInput()
 {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
