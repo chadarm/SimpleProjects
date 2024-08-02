@@ -3,6 +3,9 @@
 
 #include "BankManagement.h"
 
+// TODO - would be fun to setup a pin and have access restricted according to pin
+// TODO - save/load accounts from an encrypted file / database
+// TODO - Be able to transfer fund between users in the system
 int main()
 {
     bool running = true;
