@@ -19,9 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BasicEncrypt.cpp" />
+    <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="InputOutput.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicEncrypt.h" />
+    <ClInclude Include="FileIO.h" />
     <ClInclude Include="InputOutput.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

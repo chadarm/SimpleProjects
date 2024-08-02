@@ -57,24 +57,17 @@ void ToDoList::AddToTasks(std::string task)
 	tasks.push_back(task);
 }
 
+// Load existing tasks from file
 void ToDoList::ReadFromFile()
 {
-	// Load existing tasks from file
-	std::ifstream inputFile(fileName);
-	std::string temp;
-	while (getline(inputFile, temp))
+	auto temp = file.ReadStringsFromFile();
+	for (auto& task : temp)
 	{
-		AddToTasks(temp);
+		AddToTasks(task);
 	}
-	inputFile.close();
 }
 
 void ToDoList::WriteToFile()
 {
-	std::ofstream outputFile(fileName);
-	for (const auto& t : tasks)
-	{
-		outputFile << t << std::endl;
-	}
-	outputFile.close();
+	file.WriteStringsToFile(tasks);
 }
