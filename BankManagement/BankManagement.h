@@ -1,8 +1,6 @@
 #pragma once
 #include "InputOutput.h"
 
-
-
 bool UserInteraction();
 
 class BankAccount

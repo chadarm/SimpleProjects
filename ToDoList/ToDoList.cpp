@@ -6,6 +6,17 @@
 //int main() { return 0; }
 int main()
 {
+	bool running = true;
+	do
+	{
+		running = UserInteraction();
+	} while (running);
+	return 0;
+	
+}
+
+bool UserInteraction()
+{
 	ToDoList todoList = ToDoList("Tasks.txt");
 
 	todoList.ReadFromFile();
@@ -39,7 +50,7 @@ int main()
 	} while (choice != 'Q' && choice != 'q');
 
 	todoList.WriteToFile();
-	return 0;
+	return false;
 }
 
 void ToDoList::ShowTasks()

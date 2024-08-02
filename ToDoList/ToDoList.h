@@ -2,10 +2,9 @@
 //
 #include "InputOutput.h"
 #include "FileIO.h"
-#include <fstream>
-#include <vector>
-#include <string>
 
+
+bool UserInteraction();
 
 class ToDoList 
 {
